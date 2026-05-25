@@ -11,6 +11,8 @@ node_modules
 dist
 .vite
 preview
+*.png
+!public/*.png
 dist-ssr
 *.local
 
