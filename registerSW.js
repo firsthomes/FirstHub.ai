@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/FirstHub.ai/sw.js', { scope: '/FirstHub.ai/' })})}
