@@ -1,9 +1,13 @@
 import type { DayLog } from '../types'
 import { calculateTotals } from '../utils/calculator'
-import { getAllDays } from '../utils/storage'
+import { getAllDays, getWeights, getSettings } from '../utils/storage'
+import WeightChart from './WeightChart'
+import CalorieChart from './CalorieChart'
 
 export default function History() {
   const days = getAllDays()
+  const weights = getWeights()
+  const settings = getSettings()
 
   function formatDate(dateStr: string): string {
     const d = new Date(dateStr + 'T00:00:00')
@@ -48,6 +52,8 @@ export default function History() {
 
   return (
     <div className="page">
+      <WeightChart weights={weights} />
+      <CalorieChart days={days} phase={settings.phase} />
       {days.length === 0 && (
         <div className="empty-state">
           No history yet. Start logging food to see your days here.
