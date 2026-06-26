@@ -82,7 +82,7 @@ function matchFood(item, qtyStr, unit, notes) {
   if (/avocado/.test(lower)) return { name: 'Avocado', calories: 320, protein: 4, carbs: 16, fat: 28, quantity: qty }
   if (/bagel/.test(lower)) return { name: 'Bagel', calories: 250, protein: 9, carbs: 49, fat: 2, quantity: qty }
   if (/evolve reload|reload recovery|recovery matrix/.test(lower))
-    return { name: 'Evolve Reload', calories: 345, protein: 47, carbs: 68, fat: 2, quantity: qty }
+    return { name: 'Evolve Reload', calories: 474, protein: 47, carbs: 68, fat: 1.5, quantity: qty }
   if (/my muscle chef|mmc|marry me chicken|vodka penne/.test(lower))
     return { name: 'MMC Meal', calories: 450, protein: 42, carbs: 35, fat: 14, quantity: qty }
   if (/small cappuccino|cappuccino|coffee/.test(lower) && !/medium|large/.test(lower))
@@ -219,7 +219,7 @@ for (const row of rows) {
 }
 
 const seed = {
-  version: 1,
+  version: 2,
   days,
   weights: weights.sort((a, b) => a.date.localeCompare(b.date)),
 }

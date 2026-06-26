@@ -4,10 +4,10 @@ export const FOOD_DATABASE: FoodItem[] = [
   {
     id: 'evolve-reload',
     name: 'Evolve Reload (1.5 serves)',
-    calories: 345,
+    calories: 474,
     protein: 47,
     carbs: 68,
-    fat: 2,
+    fat: 1.5,
     serving: '1.5 serves',
   },
   {
@@ -146,6 +146,24 @@ export const FOOD_DATABASE: FoodItem[] = [
     serving: '1 meal',
   },
   {
+    id: 'mmc-vodka-penne',
+    name: 'MMC Vodka Penne Chicken',
+    calories: 510,
+    protein: 45,
+    carbs: 52,
+    fat: 12,
+    serving: '1 meal',
+  },
+  {
+    id: 'mmc-marry-me-chicken',
+    name: 'MMC Marry Me Chicken',
+    calories: 480,
+    protein: 47,
+    carbs: 38,
+    fat: 14,
+    serving: '1 meal',
+  },
+  {
     id: 'teriyaki-bowl',
     name: 'Teriyaki Chicken Rice Bowl',
     calories: 650,
@@ -249,6 +267,6 @@ export const FOOD_DATABASE: FoodItem[] = [
 export const FOOD_CATEGORIES = {
   protein: ['evolve-reload', 'yopro', 'lean-mince-250g', 'chicken-breast-200g', 'eggs-2', 'protein-shake', 'greek-yogurt-170g'],
   carbs: ['rice-125g', 'rice-175g', 'rice-240g', 'bagel', 'banana', 'oats-50g', 'sweet-potato-200g', 'rice-cakes-2', 'wrap-tortilla', 'lcm-bar', 'honey-tbsp'],
-  meals: ['mmc-meal', 'teriyaki-bowl', 'sushi-4-plates', 'grilld-simon-says'],
+  meals: ['mmc-meal', 'mmc-vodka-penne', 'mmc-marry-me-chicken', 'teriyaki-bowl', 'sushi-4-plates', 'grilld-simon-says'],
   snacks: ['protein-clusters-70g', 'peanut-butter-tbsp', 'avocado-quarter', 'cappuccino-small', 'veg-serve'],
 }

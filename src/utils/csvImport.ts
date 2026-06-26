@@ -137,7 +137,7 @@ function matchFood(item: string, qtyStr: string, unit: string, notes: string): M
   }
 
   if (/evolve reload|reload recovery|recovery matrix/.test(lower)) {
-    return { name: 'Evolve Reload', calories: 345, protein: 47, carbs: 68, fat: 2, quantity: qty }
+    return { name: 'Evolve Reload', calories: 474, protein: 47, carbs: 68, fat: 1.5, quantity: qty }
   }
 
   if (/my muscle chef|mmc|marry me chicken|vodka penne/.test(lower)) {

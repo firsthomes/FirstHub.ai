@@ -28,6 +28,7 @@ export interface DayLog {
   weight: number | null
   feeling: Feeling | null
   notes: string
+  caloriesBurned?: number | null
 }
 
 export type TrainingType =

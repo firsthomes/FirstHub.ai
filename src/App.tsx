@@ -30,7 +30,7 @@ function App() {
   }
 
   return (
-    <div className="app" key={refreshKey}>
+    <div className="app" data-refresh={refreshKey}>
       <header className="app-header">
         <h1>Food Coach</h1>
         <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>

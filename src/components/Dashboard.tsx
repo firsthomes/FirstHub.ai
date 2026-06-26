@@ -3,6 +3,7 @@ import type { DayLog, Phase, WeightEntry, TrainingType, ActivityType, Feeling } 
 import { calculateTotals, getTargets } from '../utils/calculator'
 import { saveDay, saveWeight } from '../utils/storage'
 import MacroRing from './MacroRing'
+import MealPlan from './MealPlan'
 
 interface Props {
   day: DayLog
@@ -13,6 +14,7 @@ interface Props {
 
 export default function Dashboard({ day, phase, weights, onUpdate }: Props) {
   const [weightInput, setWeightInput] = useState(day.weight?.toString() || '')
+  const [burnInput, setBurnInput] = useState(day.caloriesBurned?.toString() || '')
   const totals = calculateTotals(day.entries)
   const targets = getTargets(phase)
   const calMid = Math.round((targets.calories.min + targets.calories.max) / 2)
@@ -53,6 +55,12 @@ export default function Dashboard({ day, phase, weights, onUpdate }: Props) {
     onUpdate()
   }
 
+  function saveBurn() {
+    const v = parseFloat(burnInput)
+    saveDay({ ...day, caloriesBurned: isNaN(v) ? null : v })
+    onUpdate()
+  }
+
   return (
     <div className="page">
       {/* Calories Summary */}
@@ -84,6 +92,27 @@ export default function Dashboard({ day, phase, weights, onUpdate }: Props) {
           <MacroRing value={totals.protein} target={targets.protein} label="Protein" color="var(--accent)" unit="g" />
           <MacroRing value={totals.carbs} target={targets.carbs} label="Carbs" color="var(--green)" unit="g" />
           <MacroRing value={totals.fat} target={targets.fat} label="Fat" color="var(--yellow)" unit="g" />
+        </div>
+      </div>
+
+      <MealPlan day={day} phase={phase} onUpdate={onUpdate} />
+
+      {/* Garmin Burn */}
+      <div className="card">
+        <div className="card-title">Extra burn (Garmin)</div>
+        <div className="weight-input-row">
+          <input
+            type="number"
+            className="weight-input"
+            placeholder="0"
+            value={burnInput}
+            onChange={e => setBurnInput(e.target.value)}
+          />
+          <span className="weight-unit">cal</span>
+          <button className="save-btn" onClick={saveBurn}>Set</button>
+        </div>
+        <div style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 6, lineHeight: 1.4 }}>
+          Add extra burn from motocross, long runs, big walks etc. Bumps today's calorie target.
         </div>
       </div>
 
