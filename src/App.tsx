@@ -46,7 +46,7 @@ function App() {
               borderRadius: 12,
               padding: '8px 14px',
               cursor: 'pointer',
-              color: settings.apiKey ? 'var(--green)' : 'var(--text-dim)',
+              color: (settings.apiKey || '').length > 0 ? 'var(--green)' : 'var(--text-dim)',
               fontSize: 13,
               fontWeight: 600,
               minHeight: 32,

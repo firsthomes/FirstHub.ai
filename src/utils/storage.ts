@@ -65,12 +65,14 @@ export function saveWeight(entry: WeightEntry) {
 }
 
 export function getSettings(): UserSettings {
-  return getJSON<UserSettings>(KEYS.SETTINGS, {
+  const defaults: UserSettings = {
     phase: 'maintenance',
     height: 178,
     targetWeight: 78,
     apiKey: '',
-  })
+  }
+  const stored = getJSON<Partial<UserSettings>>(KEYS.SETTINGS, {})
+  return { ...defaults, ...stored }
 }
 
 export function saveSettings(settings: UserSettings) {

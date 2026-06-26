@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function Settings({ settings, onClose, onUpdate }: Props) {
-  const [apiKey, setApiKey] = useState(settings.apiKey)
+  const [apiKey, setApiKey] = useState(settings.apiKey || '')
   const [showKey, setShowKey] = useState(false)
 
   function save() {
@@ -86,12 +86,12 @@ export default function Settings({ settings, onClose, onUpdate }: Props) {
           <label>Status</label>
           <div style={{
             fontSize: 13,
-            color: apiKey.startsWith('sk-ant-') ? 'var(--green)' : 'var(--text-dim)',
+            color: (apiKey || '').startsWith('sk-ant-') ? 'var(--green)' : 'var(--text-dim)',
             padding: '8px 12px',
             background: 'var(--bg-input)',
             borderRadius: 8,
           }}>
-            {apiKey.startsWith('sk-ant-')
+            {(apiKey || '').startsWith('sk-ant-')
               ? 'AI coach enabled (Claude Sonnet 4.6)'
               : 'Using built-in rules (no API key set)'}
           </div>
