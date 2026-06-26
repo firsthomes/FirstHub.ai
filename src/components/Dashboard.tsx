@@ -4,6 +4,7 @@ import { calculateTotals, getTargets } from '../utils/calculator'
 import { saveDay, saveWeight } from '../utils/storage'
 import MacroRing from './MacroRing'
 import MealPlan from './MealPlan'
+import { haptic } from '../utils/haptics'
 
 interface Props {
   day: DayLog
@@ -26,6 +27,7 @@ export default function Dashboard({ day, phase, weights, onUpdate }: Props) {
   function toggleTraining(t: TrainingType) {
     const updated = { ...day, training: day.training === t ? null : t }
     saveDay(updated)
+    haptic('light')
     onUpdate()
   }
 
@@ -34,30 +36,35 @@ export default function Dashboard({ day, phase, weights, onUpdate }: Props) {
       ? day.activity.filter(x => x !== a)
       : [...day.activity, a]
     saveDay({ ...day, activity: activities })
+    haptic('light')
     onUpdate()
   }
 
   function setFeeling(f: Feeling) {
     saveDay({ ...day, feeling: day.feeling === f ? null : f })
+    haptic('light')
     onUpdate()
   }
 
   function logWeight() {
     const w = parseFloat(weightInput)
-    if (isNaN(w) || w < 50 || w > 150) return
+    if (isNaN(w) || w < 50 || w > 150) { haptic('warning'); return }
     saveWeight({ date: day.date, weight: w })
     saveDay({ ...day, weight: w })
+    haptic('success')
     onUpdate()
   }
 
   function removeEntry(entryId: string) {
     saveDay({ ...day, entries: day.entries.filter(e => e.id !== entryId) })
+    haptic('medium')
     onUpdate()
   }
 
   function saveBurn() {
     const v = parseFloat(burnInput)
     saveDay({ ...day, caloriesBurned: isNaN(v) ? null : v })
+    haptic('success')
     onUpdate()
   }
 
@@ -73,6 +80,7 @@ export default function Dashboard({ day, phase, weights, onUpdate }: Props) {
         alert(`Clipboard had "${text.slice(0, 40)}" — not a valid calorie number.`)
       }
     } catch {
+      haptic('error')
       alert('Could not read clipboard. iOS may need you to enable Paste in the prompt.')
     }
   }
@@ -119,10 +127,12 @@ export default function Dashboard({ day, phase, weights, onUpdate }: Props) {
         <div className="weight-input-row">
           <input
             type="number"
+            inputMode="numeric"
             className="weight-input"
             placeholder="0"
             value={burnInput}
             onChange={e => setBurnInput(e.target.value)}
+            autoComplete="off"
           />
           <span className="weight-unit">cal</span>
           <button className="save-btn" onClick={saveBurn}>Set</button>
@@ -217,11 +227,13 @@ export default function Dashboard({ day, phase, weights, onUpdate }: Props) {
         <div className="weight-input-row">
           <input
             type="number"
+            inputMode="decimal"
             className="weight-input"
             placeholder="77.5"
             value={weightInput}
             onChange={e => setWeightInput(e.target.value)}
             step="0.1"
+            autoComplete="off"
           />
           <span className="weight-unit">kg</span>
           <button className="save-btn" onClick={logWeight}>Log</button>

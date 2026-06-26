@@ -1,6 +1,7 @@
 import type { DayLog, Phase, FoodEntry } from '../types'
 import { generateDayPlan, type MealSlot, type TopUpOption } from '../utils/mealPlanner'
 import { saveDay } from '../utils/storage'
+import { haptic } from '../utils/haptics'
 
 interface Props {
   day: DayLog
@@ -33,6 +34,7 @@ export default function MealPlan({ day, phase, onUpdate }: Props) {
       timestamp: Date.now(),
     }))
     saveDay({ ...day, entries: [...day.entries, ...entries] })
+    haptic('success')
     onUpdate()
   }
 
@@ -49,6 +51,7 @@ export default function MealPlan({ day, phase, onUpdate }: Props) {
       timestamp: Date.now(),
     }
     saveDay({ ...day, entries: [...day.entries, entry] })
+    haptic('light')
     onUpdate()
   }
 

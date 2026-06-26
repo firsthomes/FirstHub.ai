@@ -69,12 +69,12 @@ function App() {
               background: 'var(--bg-card)',
               border: 'none',
               borderRadius: 12,
-              padding: '8px 14px',
+              padding: '10px 16px',
               cursor: 'pointer',
               color: (settings.apiKey || '').length > 0 ? 'var(--green)' : 'var(--text-dim)',
               fontSize: 13,
               fontWeight: 600,
-              minHeight: 32,
+              minHeight: 44,
             }}
             title="Settings"
           >
@@ -88,15 +88,18 @@ function App() {
           position: 'fixed',
           top: 'calc(var(--safe-top) + 60px)',
           left: '50%',
-          transform: 'translateX(-50%)',
-          background: 'var(--green-dim)',
-          color: 'var(--green)',
-          padding: '10px 18px',
+          background: 'rgba(48, 209, 88, 0.92)',
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)',
+          color: '#fff',
+          padding: '10px 20px',
           borderRadius: 22,
           fontSize: 13,
           fontWeight: 600,
           zIndex: 300,
-          boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+          boxShadow: 'var(--shadow-toast)',
+          animation: 'toast-in 0.35s var(--spring)',
+          letterSpacing: '-0.1px',
         }}>
           ✓ {toast}
         </div>
