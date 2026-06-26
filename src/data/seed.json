@@ -1,0 +1,2146 @@
+{
+  "version": 1,
+  "days": {
+    "2026-04-12": {
+      "date": "2026-04-12",
+      "entries": [],
+      "training": null,
+      "activity": [],
+      "weight": 78.5,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-04-19": {
+      "date": "2026-04-19",
+      "entries": [],
+      "training": null,
+      "activity": [],
+      "weight": 77.5,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-04-23": {
+      "date": "2026-04-23",
+      "entries": [],
+      "training": null,
+      "activity": [],
+      "weight": 76.6,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-05-05": {
+      "date": "2026-05-05",
+      "entries": [
+        {
+          "id": "seed-2026-05-05-0",
+          "foodId": "imported-2026-05-05-0",
+          "name": "Protein Pasta",
+          "calories": 215,
+          "protein": 20,
+          "carbs": 30,
+          "fat": 2,
+          "quantity": 1,
+          "timestamp": 1777982400000
+        },
+        {
+          "id": "seed-2026-05-05-1",
+          "foodId": "imported-2026-05-05-1",
+          "name": "5% Lean Mince",
+          "calories": 350,
+          "protein": 55,
+          "carbs": 0,
+          "fat": 13,
+          "quantity": 1,
+          "timestamp": 1777982400000
+        },
+        {
+          "id": "seed-2026-05-05-2",
+          "foodId": "imported-2026-05-05-2",
+          "name": "Protein Shake",
+          "calories": 120,
+          "protein": 25,
+          "carbs": 3,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1777982400000
+        },
+        {
+          "id": "seed-2026-05-05-3",
+          "foodId": "imported-2026-05-05-3",
+          "name": "Chinese meal",
+          "calories": 700,
+          "protein": 30,
+          "carbs": 85,
+          "fat": 25,
+          "quantity": 1,
+          "timestamp": 1777982400000
+        },
+        {
+          "id": "seed-2026-05-05-4",
+          "foodId": "imported-2026-05-05-4",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 2,
+          "timestamp": 1777982400000
+        },
+        {
+          "id": "seed-2026-05-05-5",
+          "foodId": "imported-2026-05-05-5",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1777982400000
+        },
+        {
+          "id": "seed-2026-05-05-6",
+          "foodId": "imported-2026-05-05-6",
+          "name": "Protein Shake",
+          "calories": 120,
+          "protein": 25,
+          "carbs": 3,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1777982400000
+        }
+      ],
+      "training": null,
+      "activity": [],
+      "weight": 76.5,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-05-06": {
+      "date": "2026-05-06",
+      "entries": [
+        {
+          "id": "seed-2026-05-06-7",
+          "foodId": "imported-2026-05-06-0",
+          "name": "5% Lean Mince",
+          "calories": 350,
+          "protein": 55,
+          "carbs": 0,
+          "fat": 13,
+          "quantity": 1,
+          "timestamp": 1778068800000
+        },
+        {
+          "id": "seed-2026-05-06-8",
+          "foodId": "imported-2026-05-06-1",
+          "name": "Cooked Rice",
+          "calories": 165,
+          "protein": 3,
+          "carbs": 36,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1778068800000
+        },
+        {
+          "id": "seed-2026-05-06-9",
+          "foodId": "imported-2026-05-06-2",
+          "name": "Small Cappuccino",
+          "calories": 90,
+          "protein": 5,
+          "carbs": 8,
+          "fat": 4,
+          "quantity": 2,
+          "timestamp": 1778068800000
+        },
+        {
+          "id": "seed-2026-05-06-10",
+          "foodId": "imported-2026-05-06-3",
+          "name": "MMC Meal",
+          "calories": 450,
+          "protein": 42,
+          "carbs": 35,
+          "fat": 14,
+          "quantity": 1,
+          "timestamp": 1778068800000
+        },
+        {
+          "id": "seed-2026-05-06-11",
+          "foodId": "imported-2026-05-06-4",
+          "name": "Protein Clusters",
+          "calories": 315,
+          "protein": 14,
+          "carbs": 42,
+          "fat": 10,
+          "quantity": 1,
+          "timestamp": 1778068800000
+        },
+        {
+          "id": "seed-2026-05-06-12",
+          "foodId": "imported-2026-05-06-5",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1778068800000
+        },
+        {
+          "id": "seed-2026-05-06-13",
+          "foodId": "imported-2026-05-06-6",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1.2,
+          "timestamp": 1778068800000
+        },
+        {
+          "id": "seed-2026-05-06-14",
+          "foodId": "imported-2026-05-06-7",
+          "name": "Protein Shake",
+          "calories": 240,
+          "protein": 50,
+          "carbs": 6,
+          "fat": 2,
+          "quantity": 1,
+          "timestamp": 1778068800000
+        },
+        {
+          "id": "seed-2026-05-06-15",
+          "foodId": "imported-2026-05-06-8",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1778068800000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": null,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-05-11": {
+      "date": "2026-05-11",
+      "entries": [],
+      "training": null,
+      "activity": [],
+      "weight": 76.6,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-05-26": {
+      "date": "2026-05-26",
+      "entries": [],
+      "training": null,
+      "activity": [],
+      "weight": 77,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-02": {
+      "date": "2026-06-02",
+      "entries": [],
+      "training": null,
+      "activity": [],
+      "weight": 77,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-03": {
+      "date": "2026-06-03",
+      "entries": [],
+      "training": null,
+      "activity": [],
+      "weight": 77.4,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-04": {
+      "date": "2026-06-04",
+      "entries": [],
+      "training": null,
+      "activity": [],
+      "weight": 77.5,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-05": {
+      "date": "2026-06-05",
+      "entries": [
+        {
+          "id": "seed-2026-06-05-16",
+          "foodId": "imported-2026-06-05-0",
+          "name": "Breakfast Burger",
+          "calories": 650,
+          "protein": 30,
+          "carbs": 50,
+          "fat": 35,
+          "quantity": 1,
+          "timestamp": 1780660800000
+        },
+        {
+          "id": "seed-2026-06-05-17",
+          "foodId": "imported-2026-06-05-1",
+          "name": "Medium Cappuccino",
+          "calories": 130,
+          "protein": 7,
+          "carbs": 11,
+          "fat": 6,
+          "quantity": 2,
+          "timestamp": 1780660800000
+        },
+        {
+          "id": "seed-2026-06-05-18",
+          "foodId": "imported-2026-06-05-2",
+          "name": "Caesar Wrap",
+          "calories": 450,
+          "protein": 25,
+          "carbs": 40,
+          "fat": 22,
+          "quantity": 2,
+          "timestamp": 1780660800000
+        },
+        {
+          "id": "seed-2026-06-05-19",
+          "foodId": "imported-2026-06-05-3",
+          "name": "Protein Clusters",
+          "calories": 315,
+          "protein": 14,
+          "carbs": 42,
+          "fat": 10,
+          "quantity": 1,
+          "timestamp": 1780660800000
+        }
+      ],
+      "training": null,
+      "activity": [],
+      "weight": 77.8,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-06": {
+      "date": "2026-06-06",
+      "entries": [
+        {
+          "id": "seed-2026-06-06-20",
+          "foodId": "imported-2026-06-06-0",
+          "name": "Ham Cheese Toastie",
+          "calories": 450,
+          "protein": 22,
+          "carbs": 38,
+          "fat": 22,
+          "quantity": 1,
+          "timestamp": 1780747200000
+        },
+        {
+          "id": "seed-2026-06-06-21",
+          "foodId": "imported-2026-06-06-1",
+          "name": "Ice Cream",
+          "calories": 250,
+          "protein": 4,
+          "carbs": 28,
+          "fat": 14,
+          "quantity": 1,
+          "timestamp": 1780747200000
+        },
+        {
+          "id": "seed-2026-06-06-22",
+          "foodId": "imported-2026-06-06-2",
+          "name": "Sushi (4 plates est)",
+          "calories": 725,
+          "protein": 28,
+          "carbs": 95,
+          "fat": 18,
+          "quantity": 1,
+          "timestamp": 1780747200000
+        },
+        {
+          "id": "seed-2026-06-06-23",
+          "foodId": "imported-2026-06-06-3",
+          "name": "Energy Drink",
+          "calories": 140,
+          "protein": 0,
+          "carbs": 35,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1780747200000
+        },
+        {
+          "id": "seed-2026-06-06-24",
+          "foodId": "imported-2026-06-06-4",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 2,
+          "timestamp": 1780747200000
+        },
+        {
+          "id": "seed-2026-06-06-25",
+          "foodId": "imported-2026-06-06-5",
+          "name": "Digestive Biscuit",
+          "calories": 70,
+          "protein": 1,
+          "carbs": 10,
+          "fat": 3,
+          "quantity": 3,
+          "timestamp": 1780747200000
+        },
+        {
+          "id": "seed-2026-06-06-26",
+          "foodId": "imported-2026-06-06-6",
+          "name": "Sports Drink",
+          "calories": 200,
+          "protein": 0,
+          "carbs": 50,
+          "fat": 0,
+          "quantity": 1.5,
+          "timestamp": 1780747200000
+        },
+        {
+          "id": "seed-2026-06-06-27",
+          "foodId": "imported-2026-06-06-7",
+          "name": "Oat Bar",
+          "calories": 200,
+          "protein": 4,
+          "carbs": 30,
+          "fat": 7,
+          "quantity": 1,
+          "timestamp": 1780747200000
+        }
+      ],
+      "training": null,
+      "activity": [
+        "motocross"
+      ],
+      "weight": null,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-07": {
+      "date": "2026-06-07",
+      "entries": [],
+      "training": null,
+      "activity": [],
+      "weight": 78,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-08": {
+      "date": "2026-06-08",
+      "entries": [
+        {
+          "id": "seed-2026-06-08-28",
+          "foodId": "imported-2026-06-08-0",
+          "name": "5% Lean Mince",
+          "calories": 350,
+          "protein": 55,
+          "carbs": 0,
+          "fat": 13,
+          "quantity": 1,
+          "timestamp": 1780920000000
+        },
+        {
+          "id": "seed-2026-06-08-29",
+          "foodId": "imported-2026-06-08-1",
+          "name": "Protein Pasta",
+          "calories": 358.33333333333337,
+          "protein": 33.333333333333336,
+          "carbs": 50,
+          "fat": 3.3333333333333335,
+          "quantity": 1,
+          "timestamp": 1780920000000
+        },
+        {
+          "id": "seed-2026-06-08-30",
+          "foodId": "imported-2026-06-08-2",
+          "name": "Tinned Tomatoes",
+          "calories": 80,
+          "protein": 4,
+          "carbs": 16,
+          "fat": 0,
+          "quantity": 400,
+          "timestamp": 1780920000000
+        },
+        {
+          "id": "seed-2026-06-08-31",
+          "foodId": "imported-2026-06-08-3",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1780920000000
+        },
+        {
+          "id": "seed-2026-06-08-32",
+          "foodId": "imported-2026-06-08-4",
+          "name": "Protein Clusters",
+          "calories": 382.49999999999994,
+          "protein": 17,
+          "carbs": 50.99999999999999,
+          "fat": 12.142857142857142,
+          "quantity": 1,
+          "timestamp": 1780920000000
+        },
+        {
+          "id": "seed-2026-06-08-33",
+          "foodId": "imported-2026-06-08-5",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1780920000000
+        },
+        {
+          "id": "seed-2026-06-08-34",
+          "foodId": "imported-2026-06-08-6",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1780920000000
+        },
+        {
+          "id": "seed-2026-06-08-35",
+          "foodId": "imported-2026-06-08-7",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 1,
+          "timestamp": 1780920000000
+        },
+        {
+          "id": "seed-2026-06-08-36",
+          "foodId": "imported-2026-06-08-8",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 2,
+          "timestamp": 1780920000000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": 77.7,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-09": {
+      "date": "2026-06-09",
+      "entries": [
+        {
+          "id": "seed-2026-06-09-37",
+          "foodId": "imported-2026-06-09-0",
+          "name": "MMC Meal",
+          "calories": 450,
+          "protein": 42,
+          "carbs": 35,
+          "fat": 14,
+          "quantity": 1,
+          "timestamp": 1781006400000
+        },
+        {
+          "id": "seed-2026-06-09-38",
+          "foodId": "imported-2026-06-09-1",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781006400000
+        },
+        {
+          "id": "seed-2026-06-09-39",
+          "foodId": "imported-2026-06-09-2",
+          "name": "Protein Clusters",
+          "calories": 360,
+          "protein": 16,
+          "carbs": 48,
+          "fat": 11.428571428571427,
+          "quantity": 1,
+          "timestamp": 1781006400000
+        },
+        {
+          "id": "seed-2026-06-09-40",
+          "foodId": "imported-2026-06-09-3",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1781006400000
+        },
+        {
+          "id": "seed-2026-06-09-41",
+          "foodId": "imported-2026-06-09-4",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781006400000
+        },
+        {
+          "id": "seed-2026-06-09-42",
+          "foodId": "imported-2026-06-09-5",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1781006400000
+        },
+        {
+          "id": "seed-2026-06-09-43",
+          "foodId": "imported-2026-06-09-6",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781006400000
+        },
+        {
+          "id": "seed-2026-06-09-44",
+          "foodId": "imported-2026-06-09-7",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 0.5,
+          "timestamp": 1781006400000
+        },
+        {
+          "id": "seed-2026-06-09-45",
+          "foodId": "imported-2026-06-09-8",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 2,
+          "timestamp": 1781006400000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": 77.7,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-10": {
+      "date": "2026-06-10",
+      "entries": [
+        {
+          "id": "seed-2026-06-10-46",
+          "foodId": "imported-2026-06-10-0",
+          "name": "MMC Meal",
+          "calories": 450,
+          "protein": 42,
+          "carbs": 35,
+          "fat": 14,
+          "quantity": 1,
+          "timestamp": 1781092800000
+        },
+        {
+          "id": "seed-2026-06-10-47",
+          "foodId": "imported-2026-06-10-1",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781092800000
+        },
+        {
+          "id": "seed-2026-06-10-48",
+          "foodId": "imported-2026-06-10-2",
+          "name": "Protein Clusters",
+          "calories": 360,
+          "protein": 16,
+          "carbs": 48,
+          "fat": 11.428571428571427,
+          "quantity": 1,
+          "timestamp": 1781092800000
+        },
+        {
+          "id": "seed-2026-06-10-49",
+          "foodId": "imported-2026-06-10-3",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1781092800000
+        },
+        {
+          "id": "seed-2026-06-10-50",
+          "foodId": "imported-2026-06-10-4",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781092800000
+        },
+        {
+          "id": "seed-2026-06-10-51",
+          "foodId": "imported-2026-06-10-5",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1781092800000
+        },
+        {
+          "id": "seed-2026-06-10-52",
+          "foodId": "imported-2026-06-10-6",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781092800000
+        },
+        {
+          "id": "seed-2026-06-10-53",
+          "foodId": "imported-2026-06-10-7",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 0.5,
+          "timestamp": 1781092800000
+        },
+        {
+          "id": "seed-2026-06-10-54",
+          "foodId": "imported-2026-06-10-8",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 2,
+          "timestamp": 1781092800000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": 77.6,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-11": {
+      "date": "2026-06-11",
+      "entries": [
+        {
+          "id": "seed-2026-06-11-55",
+          "foodId": "imported-2026-06-11-0",
+          "name": "5% Lean Mince",
+          "calories": 350,
+          "protein": 55,
+          "carbs": 0,
+          "fat": 13,
+          "quantity": 1,
+          "timestamp": 1781179200000
+        },
+        {
+          "id": "seed-2026-06-11-56",
+          "foodId": "imported-2026-06-11-1",
+          "name": "Avocado",
+          "calories": 320,
+          "protein": 4,
+          "carbs": 16,
+          "fat": 28,
+          "quantity": 0.5,
+          "timestamp": 1781179200000
+        },
+        {
+          "id": "seed-2026-06-11-57",
+          "foodId": "imported-2026-06-11-2",
+          "name": "Cooked Rice",
+          "calories": 165,
+          "protein": 3,
+          "carbs": 36,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781179200000
+        },
+        {
+          "id": "seed-2026-06-11-58",
+          "foodId": "imported-2026-06-11-3",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781179200000
+        }
+      ],
+      "training": null,
+      "activity": [],
+      "weight": 77.9,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-12": {
+      "date": "2026-06-12",
+      "entries": [
+        {
+          "id": "seed-2026-06-12-59",
+          "foodId": "imported-2026-06-12-0",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 0.75,
+          "timestamp": 1781265600000
+        },
+        {
+          "id": "seed-2026-06-12-60",
+          "foodId": "imported-2026-06-12-1",
+          "name": "Protein Clusters",
+          "calories": 396,
+          "protein": 17.6,
+          "carbs": 52.8,
+          "fat": 12.571428571428571,
+          "quantity": 1,
+          "timestamp": 1781265600000
+        },
+        {
+          "id": "seed-2026-06-12-61",
+          "foodId": "imported-2026-06-12-2",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1781265600000
+        },
+        {
+          "id": "seed-2026-06-12-62",
+          "foodId": "imported-2026-06-12-3",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1781265600000
+        },
+        {
+          "id": "seed-2026-06-12-63",
+          "foodId": "imported-2026-06-12-4",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 2,
+          "timestamp": 1781265600000
+        },
+        {
+          "id": "seed-2026-06-12-64",
+          "foodId": "imported-2026-06-12-5",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 0.5,
+          "timestamp": 1781265600000
+        },
+        {
+          "id": "seed-2026-06-12-65",
+          "foodId": "imported-2026-06-12-6",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 2,
+          "timestamp": 1781265600000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": 78.9,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-14": {
+      "date": "2026-06-14",
+      "entries": [
+        {
+          "id": "seed-2026-06-14-66",
+          "foodId": "imported-2026-06-14-0",
+          "name": "5% Lean Mince",
+          "calories": 350,
+          "protein": 55,
+          "carbs": 0,
+          "fat": 13,
+          "quantity": 1,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-67",
+          "foodId": "imported-2026-06-14-1",
+          "name": "Avocado",
+          "calories": 320,
+          "protein": 4,
+          "carbs": 16,
+          "fat": 28,
+          "quantity": 0.25,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-68",
+          "foodId": "imported-2026-06-14-2",
+          "name": "Cooked Rice",
+          "calories": 158.4,
+          "protein": 2.88,
+          "carbs": 34.56,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-69",
+          "foodId": "imported-2026-06-14-3",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-70",
+          "foodId": "imported-2026-06-14-4",
+          "name": "Small Cappuccino",
+          "calories": 90,
+          "protein": 5,
+          "carbs": 8,
+          "fat": 4,
+          "quantity": 1,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-71",
+          "foodId": "imported-2026-06-14-5",
+          "name": "MMC Meal",
+          "calories": 450,
+          "protein": 42,
+          "carbs": 35,
+          "fat": 14,
+          "quantity": 1,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-72",
+          "foodId": "imported-2026-06-14-6",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 0.75,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-73",
+          "foodId": "imported-2026-06-14-7",
+          "name": "Protein Clusters",
+          "calories": 360,
+          "protein": 16,
+          "carbs": 48,
+          "fat": 11.428571428571427,
+          "quantity": 1,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-74",
+          "foodId": "imported-2026-06-14-8",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-75",
+          "foodId": "imported-2026-06-14-9",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-76",
+          "foodId": "imported-2026-06-14-10",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-77",
+          "foodId": "imported-2026-06-14-11",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781438400000
+        },
+        {
+          "id": "seed-2026-06-14-78",
+          "foodId": "imported-2026-06-14-12",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 1,
+          "timestamp": 1781438400000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": null,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-15": {
+      "date": "2026-06-15",
+      "entries": [],
+      "training": null,
+      "activity": [],
+      "weight": 79.4,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-16": {
+      "date": "2026-06-16",
+      "entries": [
+        {
+          "id": "seed-2026-06-16-79",
+          "foodId": "imported-2026-06-16-0",
+          "name": "5% Lean Mince",
+          "calories": 350,
+          "protein": 55,
+          "carbs": 0,
+          "fat": 13,
+          "quantity": 1,
+          "timestamp": 1781611200000
+        },
+        {
+          "id": "seed-2026-06-16-80",
+          "foodId": "imported-2026-06-16-1",
+          "name": "Avocado",
+          "calories": 320,
+          "protein": 4,
+          "carbs": 16,
+          "fat": 28,
+          "quantity": 0.25,
+          "timestamp": 1781611200000
+        },
+        {
+          "id": "seed-2026-06-16-81",
+          "foodId": "imported-2026-06-16-2",
+          "name": "Cooked Rice",
+          "calories": 158.4,
+          "protein": 2.88,
+          "carbs": 34.56,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781611200000
+        },
+        {
+          "id": "seed-2026-06-16-82",
+          "foodId": "imported-2026-06-16-3",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 0.75,
+          "timestamp": 1781611200000
+        },
+        {
+          "id": "seed-2026-06-16-83",
+          "foodId": "imported-2026-06-16-4",
+          "name": "MMC Meal",
+          "calories": 450,
+          "protein": 42,
+          "carbs": 35,
+          "fat": 14,
+          "quantity": 1,
+          "timestamp": 1781611200000
+        },
+        {
+          "id": "seed-2026-06-16-84",
+          "foodId": "imported-2026-06-16-5",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781611200000
+        },
+        {
+          "id": "seed-2026-06-16-85",
+          "foodId": "imported-2026-06-16-6",
+          "name": "Protein Clusters",
+          "calories": 382.49999999999994,
+          "protein": 17,
+          "carbs": 50.99999999999999,
+          "fat": 12.142857142857142,
+          "quantity": 1,
+          "timestamp": 1781611200000
+        },
+        {
+          "id": "seed-2026-06-16-86",
+          "foodId": "imported-2026-06-16-7",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1781611200000
+        },
+        {
+          "id": "seed-2026-06-16-87",
+          "foodId": "imported-2026-06-16-8",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1781611200000
+        },
+        {
+          "id": "seed-2026-06-16-88",
+          "foodId": "imported-2026-06-16-9",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 2,
+          "timestamp": 1781611200000
+        },
+        {
+          "id": "seed-2026-06-16-89",
+          "foodId": "imported-2026-06-16-10",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781611200000
+        },
+        {
+          "id": "seed-2026-06-16-90",
+          "foodId": "imported-2026-06-16-11",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 1,
+          "timestamp": 1781611200000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": 78.5,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-17": {
+      "date": "2026-06-17",
+      "entries": [
+        {
+          "id": "seed-2026-06-17-91",
+          "foodId": "imported-2026-06-17-0",
+          "name": "Donut",
+          "calories": 300,
+          "protein": 4,
+          "carbs": 38,
+          "fat": 15,
+          "quantity": 0.5,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-92",
+          "foodId": "imported-2026-06-17-1",
+          "name": "GYG Burrito Bowl",
+          "calories": 650,
+          "protein": 40,
+          "carbs": 70,
+          "fat": 22,
+          "quantity": 1,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-93",
+          "foodId": "imported-2026-06-17-2",
+          "name": "GYG Small Chips",
+          "calories": 300,
+          "protein": 4,
+          "carbs": 35,
+          "fat": 16,
+          "quantity": 1,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-94",
+          "foodId": "imported-2026-06-17-3",
+          "name": "Small Cappuccino",
+          "calories": 90,
+          "protein": 5,
+          "carbs": 8,
+          "fat": 4,
+          "quantity": 2,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-95",
+          "foodId": "imported-2026-06-17-4",
+          "name": "5% Lean Mince",
+          "calories": 350,
+          "protein": 55,
+          "carbs": 0,
+          "fat": 13,
+          "quantity": 1,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-96",
+          "foodId": "imported-2026-06-17-5",
+          "name": "Cooked Rice",
+          "calories": 158.4,
+          "protein": 2.88,
+          "carbs": 34.56,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-97",
+          "foodId": "imported-2026-06-17-6",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 0.75,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-98",
+          "foodId": "imported-2026-06-17-7",
+          "name": "Protein Clusters",
+          "calories": 360,
+          "protein": 16,
+          "carbs": 48,
+          "fat": 11.428571428571427,
+          "quantity": 1,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-99",
+          "foodId": "imported-2026-06-17-8",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-100",
+          "foodId": "imported-2026-06-17-9",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-101",
+          "foodId": "imported-2026-06-17-10",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-102",
+          "foodId": "imported-2026-06-17-11",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781697600000
+        },
+        {
+          "id": "seed-2026-06-17-103",
+          "foodId": "imported-2026-06-17-12",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 1,
+          "timestamp": 1781697600000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": 78.8,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-18": {
+      "date": "2026-06-18",
+      "entries": [
+        {
+          "id": "seed-2026-06-18-104",
+          "foodId": "imported-2026-06-18-0",
+          "name": "Small Cappuccino",
+          "calories": 90,
+          "protein": 5,
+          "carbs": 8,
+          "fat": 4,
+          "quantity": 2,
+          "timestamp": 1781784000000
+        },
+        {
+          "id": "seed-2026-06-18-105",
+          "foodId": "imported-2026-06-18-1",
+          "name": "Teriyaki Chicken Sushi Bowl",
+          "calories": 650,
+          "protein": 45,
+          "carbs": 85,
+          "fat": 12,
+          "quantity": 1,
+          "timestamp": 1781784000000
+        },
+        {
+          "id": "seed-2026-06-18-106",
+          "foodId": "imported-2026-06-18-2",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 0.75,
+          "timestamp": 1781784000000
+        },
+        {
+          "id": "seed-2026-06-18-107",
+          "foodId": "imported-2026-06-18-3",
+          "name": "Protein Clusters",
+          "calories": 315,
+          "protein": 14,
+          "carbs": 42,
+          "fat": 10,
+          "quantity": 1,
+          "timestamp": 1781784000000
+        },
+        {
+          "id": "seed-2026-06-18-108",
+          "foodId": "imported-2026-06-18-4",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1781784000000
+        },
+        {
+          "id": "seed-2026-06-18-109",
+          "foodId": "imported-2026-06-18-5",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1781784000000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": 79,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-20": {
+      "date": "2026-06-20",
+      "entries": [
+        {
+          "id": "seed-2026-06-20-110",
+          "foodId": "imported-2026-06-20-0",
+          "name": "Bagel",
+          "calories": 250,
+          "protein": 9,
+          "carbs": 49,
+          "fat": 2,
+          "quantity": 1,
+          "timestamp": 1781956800000
+        },
+        {
+          "id": "seed-2026-06-20-111",
+          "foodId": "imported-2026-06-20-1",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781956800000
+        },
+        {
+          "id": "seed-2026-06-20-112",
+          "foodId": "imported-2026-06-20-2",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1781956800000
+        },
+        {
+          "id": "seed-2026-06-20-113",
+          "foodId": "imported-2026-06-20-3",
+          "name": "Grill'd Burger",
+          "calories": 590,
+          "protein": 39,
+          "carbs": 45,
+          "fat": 26,
+          "quantity": 1,
+          "timestamp": 1781956800000
+        },
+        {
+          "id": "seed-2026-06-20-114",
+          "foodId": "imported-2026-06-20-4",
+          "name": "Small Chips",
+          "calories": 300,
+          "protein": 4,
+          "carbs": 35,
+          "fat": 16,
+          "quantity": 1,
+          "timestamp": 1781956800000
+        },
+        {
+          "id": "seed-2026-06-20-115",
+          "foodId": "imported-2026-06-20-5",
+          "name": "Chicken Roll",
+          "calories": 350,
+          "protein": 18,
+          "carbs": 30,
+          "fat": 16,
+          "quantity": 2,
+          "timestamp": 1781956800000
+        },
+        {
+          "id": "seed-2026-06-20-116",
+          "foodId": "imported-2026-06-20-6",
+          "name": "Donut",
+          "calories": 300,
+          "protein": 4,
+          "carbs": 38,
+          "fat": 15,
+          "quantity": 1,
+          "timestamp": 1781956800000
+        },
+        {
+          "id": "seed-2026-06-20-117",
+          "foodId": "imported-2026-06-20-7",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 4,
+          "timestamp": 1781956800000
+        }
+      ],
+      "training": null,
+      "activity": [
+        "motocross"
+      ],
+      "weight": null,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-21": {
+      "date": "2026-06-21",
+      "entries": [
+        {
+          "id": "seed-2026-06-21-118",
+          "foodId": "imported-2026-06-21-0",
+          "name": "Breakfast Burger",
+          "calories": 650,
+          "protein": 30,
+          "carbs": 50,
+          "fat": 35,
+          "quantity": 1,
+          "timestamp": 1782043200000
+        },
+        {
+          "id": "seed-2026-06-21-119",
+          "foodId": "imported-2026-06-21-1",
+          "name": "Ice Cream",
+          "calories": 250,
+          "protein": 4,
+          "carbs": 28,
+          "fat": 14,
+          "quantity": 1,
+          "timestamp": 1782043200000
+        },
+        {
+          "id": "seed-2026-06-21-120",
+          "foodId": "imported-2026-06-21-2",
+          "name": "Garlic Bread",
+          "calories": 280,
+          "protein": 6,
+          "carbs": 32,
+          "fat": 14,
+          "quantity": 1,
+          "timestamp": 1782043200000
+        },
+        {
+          "id": "seed-2026-06-21-121",
+          "foodId": "imported-2026-06-21-3",
+          "name": "Spaghetti meal",
+          "calories": 600,
+          "protein": 25,
+          "carbs": 80,
+          "fat": 18,
+          "quantity": 1,
+          "timestamp": 1782043200000
+        },
+        {
+          "id": "seed-2026-06-21-122",
+          "foodId": "imported-2026-06-21-4",
+          "name": "Small Cappuccino",
+          "calories": 90,
+          "protein": 5,
+          "carbs": 8,
+          "fat": 4,
+          "quantity": 2,
+          "timestamp": 1782043200000
+        },
+        {
+          "id": "seed-2026-06-21-123",
+          "foodId": "imported-2026-06-21-5",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1782043200000
+        },
+        {
+          "id": "seed-2026-06-21-124",
+          "foodId": "imported-2026-06-21-6",
+          "name": "Protein Clusters",
+          "calories": 225,
+          "protein": 10,
+          "carbs": 30,
+          "fat": 7.142857142857143,
+          "quantity": 1,
+          "timestamp": 1782043200000
+        },
+        {
+          "id": "seed-2026-06-21-125",
+          "foodId": "imported-2026-06-21-7",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1782043200000
+        },
+        {
+          "id": "seed-2026-06-21-126",
+          "foodId": "imported-2026-06-21-8",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1782043200000
+        }
+      ],
+      "training": null,
+      "activity": [],
+      "weight": null,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-22": {
+      "date": "2026-06-22",
+      "entries": [
+        {
+          "id": "seed-2026-06-22-127",
+          "foodId": "imported-2026-06-22-0",
+          "name": "Small Cappuccino",
+          "calories": 90,
+          "protein": 5,
+          "carbs": 8,
+          "fat": 4,
+          "quantity": 1,
+          "timestamp": 1782129600000
+        },
+        {
+          "id": "seed-2026-06-22-128",
+          "foodId": "imported-2026-06-22-1",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1782129600000
+        },
+        {
+          "id": "seed-2026-06-22-129",
+          "foodId": "imported-2026-06-22-2",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 1,
+          "timestamp": 1782129600000
+        },
+        {
+          "id": "seed-2026-06-22-130",
+          "foodId": "imported-2026-06-22-3",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1782129600000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": null,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-23": {
+      "date": "2026-06-23",
+      "entries": [
+        {
+          "id": "seed-2026-06-23-131",
+          "foodId": "imported-2026-06-23-0",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 0.75,
+          "timestamp": 1782216000000
+        },
+        {
+          "id": "seed-2026-06-23-132",
+          "foodId": "imported-2026-06-23-1",
+          "name": "Protein Clusters",
+          "calories": 270,
+          "protein": 12,
+          "carbs": 36,
+          "fat": 8.571428571428571,
+          "quantity": 1,
+          "timestamp": 1782216000000
+        },
+        {
+          "id": "seed-2026-06-23-133",
+          "foodId": "imported-2026-06-23-2",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1782216000000
+        },
+        {
+          "id": "seed-2026-06-23-134",
+          "foodId": "imported-2026-06-23-3",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1782216000000
+        },
+        {
+          "id": "seed-2026-06-23-135",
+          "foodId": "imported-2026-06-23-4",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 2,
+          "timestamp": 1782216000000
+        },
+        {
+          "id": "seed-2026-06-23-136",
+          "foodId": "imported-2026-06-23-5",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1782216000000
+        },
+        {
+          "id": "seed-2026-06-23-137",
+          "foodId": "imported-2026-06-23-6",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 1,
+          "timestamp": 1782216000000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": 78.7,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-24": {
+      "date": "2026-06-24",
+      "entries": [
+        {
+          "id": "seed-2026-06-24-138",
+          "foodId": "imported-2026-06-24-0",
+          "name": "Carrot",
+          "calories": 30,
+          "protein": 1,
+          "carbs": 7,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1782302400000
+        },
+        {
+          "id": "seed-2026-06-24-139",
+          "foodId": "imported-2026-06-24-1",
+          "name": "Protein Clusters",
+          "calories": 346.5,
+          "protein": 15.400000000000002,
+          "carbs": 46.2,
+          "fat": 11,
+          "quantity": 1,
+          "timestamp": 1782302400000
+        },
+        {
+          "id": "seed-2026-06-24-140",
+          "foodId": "imported-2026-06-24-2",
+          "name": "Sweet Biscuit",
+          "calories": 70,
+          "protein": 1,
+          "carbs": 10,
+          "fat": 3,
+          "quantity": 2,
+          "timestamp": 1782302400000
+        }
+      ],
+      "training": null,
+      "activity": [],
+      "weight": 78.4,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-25": {
+      "date": "2026-06-25",
+      "entries": [
+        {
+          "id": "seed-2026-06-25-141",
+          "foodId": "imported-2026-06-25-0",
+          "name": "Small Cappuccino",
+          "calories": 90,
+          "protein": 5,
+          "carbs": 8,
+          "fat": 4,
+          "quantity": 1,
+          "timestamp": 1782388800000
+        },
+        {
+          "id": "seed-2026-06-25-142",
+          "foodId": "imported-2026-06-25-1",
+          "name": "MMC Meal",
+          "calories": 450,
+          "protein": 42,
+          "carbs": 35,
+          "fat": 14,
+          "quantity": 1,
+          "timestamp": 1782388800000
+        },
+        {
+          "id": "seed-2026-06-25-143",
+          "foodId": "imported-2026-06-25-2",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 0.75,
+          "timestamp": 1782388800000
+        },
+        {
+          "id": "seed-2026-06-25-144",
+          "foodId": "imported-2026-06-25-3",
+          "name": "Protein Clusters",
+          "calories": 360,
+          "protein": 16,
+          "carbs": 48,
+          "fat": 11.428571428571427,
+          "quantity": 1,
+          "timestamp": 1782388800000
+        },
+        {
+          "id": "seed-2026-06-25-145",
+          "foodId": "imported-2026-06-25-4",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1782388800000
+        },
+        {
+          "id": "seed-2026-06-25-146",
+          "foodId": "imported-2026-06-25-5",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1782388800000
+        },
+        {
+          "id": "seed-2026-06-25-147",
+          "foodId": "imported-2026-06-25-6",
+          "name": "Bagel",
+          "calories": 250,
+          "protein": 9,
+          "carbs": 49,
+          "fat": 2,
+          "quantity": 0.5,
+          "timestamp": 1782388800000
+        },
+        {
+          "id": "seed-2026-06-25-148",
+          "foodId": "imported-2026-06-25-7",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1.5,
+          "timestamp": 1782388800000
+        },
+        {
+          "id": "seed-2026-06-25-149",
+          "foodId": "imported-2026-06-25-8",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 0.5,
+          "timestamp": 1782388800000
+        },
+        {
+          "id": "seed-2026-06-25-150",
+          "foodId": "imported-2026-06-25-9",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 1,
+          "timestamp": 1782388800000
+        },
+        {
+          "id": "seed-2026-06-25-151",
+          "foodId": "imported-2026-06-25-10",
+          "name": "Sweet Biscuit",
+          "calories": 70,
+          "protein": 1,
+          "carbs": 10,
+          "fat": 3,
+          "quantity": 2,
+          "timestamp": 1782388800000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": 78.3,
+      "feeling": null,
+      "notes": ""
+    },
+    "2026-06-26": {
+      "date": "2026-06-26",
+      "entries": [
+        {
+          "id": "seed-2026-06-26-152",
+          "foodId": "imported-2026-06-26-0",
+          "name": "Honey",
+          "calories": 65,
+          "protein": 0,
+          "carbs": 17,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1782475200000
+        },
+        {
+          "id": "seed-2026-06-26-153",
+          "foodId": "imported-2026-06-26-1",
+          "name": "Protein Clusters",
+          "calories": 360,
+          "protein": 16,
+          "carbs": 48,
+          "fat": 11.428571428571427,
+          "quantity": 1,
+          "timestamp": 1782475200000
+        },
+        {
+          "id": "seed-2026-06-26-154",
+          "foodId": "imported-2026-06-26-2",
+          "name": "YoPro Yogurt",
+          "calories": 140,
+          "protein": 20,
+          "carbs": 10,
+          "fat": 1,
+          "quantity": 1,
+          "timestamp": 1782475200000
+        },
+        {
+          "id": "seed-2026-06-26-155",
+          "foodId": "imported-2026-06-26-3",
+          "name": "Evolve Reload",
+          "calories": 345,
+          "protein": 47,
+          "carbs": 68,
+          "fat": 2,
+          "quantity": 1.5,
+          "timestamp": 1782475200000
+        },
+        {
+          "id": "seed-2026-06-26-156",
+          "foodId": "imported-2026-06-26-4",
+          "name": "Bagel",
+          "calories": 250,
+          "protein": 9,
+          "carbs": 49,
+          "fat": 2,
+          "quantity": 0.5,
+          "timestamp": 1782475200000
+        },
+        {
+          "id": "seed-2026-06-26-157",
+          "foodId": "imported-2026-06-26-5",
+          "name": "Banana",
+          "calories": 105,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "quantity": 1,
+          "timestamp": 1782475200000
+        },
+        {
+          "id": "seed-2026-06-26-158",
+          "foodId": "imported-2026-06-26-6",
+          "name": "LCM bar",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 2,
+          "quantity": 1,
+          "timestamp": 1782475200000
+        }
+      ],
+      "training": "upper",
+      "activity": [],
+      "weight": 78.5,
+      "feeling": null,
+      "notes": ""
+    }
+  },
+  "weights": [
+    {
+      "date": "2026-04-12",
+      "weight": 78.5
+    },
+    {
+      "date": "2026-04-19",
+      "weight": 77.5
+    },
+    {
+      "date": "2026-04-23",
+      "weight": 76.6
+    },
+    {
+      "date": "2026-05-05",
+      "weight": 76.5
+    },
+    {
+      "date": "2026-05-11",
+      "weight": 76.6
+    },
+    {
+      "date": "2026-05-26",
+      "weight": 77
+    },
+    {
+      "date": "2026-06-02",
+      "weight": 77
+    },
+    {
+      "date": "2026-06-03",
+      "weight": 77.4
+    },
+    {
+      "date": "2026-06-04",
+      "weight": 77.5
+    },
+    {
+      "date": "2026-06-05",
+      "weight": 77.8
+    },
+    {
+      "date": "2026-06-07",
+      "weight": 78
+    },
+    {
+      "date": "2026-06-08",
+      "weight": 77.7
+    },
+    {
+      "date": "2026-06-09",
+      "weight": 77.7
+    },
+    {
+      "date": "2026-06-10",
+      "weight": 77.6
+    },
+    {
+      "date": "2026-06-11",
+      "weight": 77.9
+    },
+    {
+      "date": "2026-06-12",
+      "weight": 78.9
+    },
+    {
+      "date": "2026-06-15",
+      "weight": 79.4
+    },
+    {
+      "date": "2026-06-16",
+      "weight": 78.5
+    },
+    {
+      "date": "2026-06-17",
+      "weight": 78.8
+    },
+    {
+      "date": "2026-06-18",
+      "weight": 79
+    },
+    {
+      "date": "2026-06-23",
+      "weight": 78.7
+    },
+    {
+      "date": "2026-06-24",
+      "weight": 78.4
+    },
+    {
+      "date": "2026-06-25",
+      "weight": 78.3
+    },
+    {
+      "date": "2026-06-26",
+      "weight": 78.5
+    }
+  ]
+}
