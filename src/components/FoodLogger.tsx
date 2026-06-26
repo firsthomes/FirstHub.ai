@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { DayLog, FoodEntry } from '../types'
 import { FOOD_DATABASE, FOOD_CATEGORIES } from '../data/foods'
 import { saveDay } from '../utils/storage'
+import { calculateTotals } from '../utils/calculator'
 
 interface Props {
   day: DayLog
@@ -20,6 +21,9 @@ export default function FoodLogger({ day, onUpdate, onDone }: Props) {
   const [customP, setCustomP] = useState('')
   const [customC, setCustomC] = useState('')
   const [customF, setCustomF] = useState('')
+  const [justAdded, setJustAdded] = useState<string | null>(null)
+
+  const totals = calculateTotals(day.entries)
 
   const filteredFoods = FOOD_DATABASE.filter(food => {
     if (search) {
@@ -47,7 +51,8 @@ export default function FoodLogger({ day, onUpdate, onDone }: Props) {
     }
     saveDay({ ...day, entries: [...day.entries, entry] })
     onUpdate()
-    onDone()
+    setJustAdded(food.name)
+    setTimeout(() => setJustAdded(null), 1500)
   }
 
   function addCustomFood() {
@@ -65,23 +70,69 @@ export default function FoodLogger({ day, onUpdate, onDone }: Props) {
     }
     saveDay({ ...day, entries: [...day.entries, entry] })
     onUpdate()
+    const name = customName
     setShowCustom(false)
     setCustomName('')
     setCustomCal('')
     setCustomP('')
     setCustomC('')
     setCustomF('')
-    onDone()
+    setJustAdded(name)
+    setTimeout(() => setJustAdded(null), 1500)
   }
 
   return (
     <div className="page">
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 12,
+        padding: '8px 12px',
+        background: 'var(--bg-card)',
+        borderRadius: 10,
+      }}>
+        <div style={{ fontSize: 12, color: 'var(--text-dim)' }}>
+          <strong style={{ color: 'var(--text)', fontSize: 16 }}>{Math.round(totals.calories)}</strong> cal
+          {' · '}{Math.round(totals.protein)}P · {Math.round(totals.carbs)}C · {Math.round(totals.fat)}F
+        </div>
+        <button
+          onClick={onDone}
+          style={{
+            background: 'var(--accent-dim)',
+            color: 'var(--accent)',
+            border: 'none',
+            borderRadius: 8,
+            padding: '6px 14px',
+            fontSize: 13,
+            fontWeight: 600,
+            cursor: 'pointer',
+          }}
+        >
+          Done
+        </button>
+      </div>
+
+      {justAdded && (
+        <div style={{
+          background: 'var(--green-dim)',
+          color: 'var(--green)',
+          padding: '8px 12px',
+          borderRadius: 8,
+          fontSize: 13,
+          fontWeight: 600,
+          marginBottom: 12,
+          textAlign: 'center',
+        }}>
+          Added: {justAdded}
+        </div>
+      )}
+
       <input
         className="search-input"
         placeholder="Search foods..."
         value={search}
         onChange={e => setSearch(e.target.value)}
-        autoFocus
       />
 
       <div className="category-tabs">
