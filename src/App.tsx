@@ -27,11 +27,21 @@ function App() {
       const parts: string[] = []
       if (imported.burn != null) parts.push(`burn ${imported.burn} cal`)
       if (imported.weight != null) parts.push(`weight ${imported.weight} kg`)
-      setToast(`Synced from Shortcut: ${parts.join(', ')}`)
+      setToast(`Synced: ${parts.join(', ')}`)
       setRefreshKey(k => k + 1)
       const t = setTimeout(() => setToast(null), 3500)
       return () => clearTimeout(t)
     }
+  }, [])
+
+  useEffect(() => {
+    function onVisibility() {
+      if (document.visibilityState === 'visible') {
+        setRefreshKey(k => k + 1)
+      }
+    }
+    document.addEventListener('visibilitychange', onVisibility)
+    return () => document.removeEventListener('visibilitychange', onVisibility)
   }, [])
 
   const settings = getSettings()

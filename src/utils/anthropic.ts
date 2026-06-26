@@ -1,6 +1,8 @@
 import Anthropic from '@anthropic-ai/sdk'
 import type { DayLog, Phase, ChatMessage } from '../types'
 import { calculateTotals } from './calculator'
+import { generateDayPlan } from './mealPlanner'
+import { getAllDays, getWeights } from './storage'
 
 const SYSTEM_PROMPT = `You are Callum Food Coach, a practical personal nutrition and physique assistant for Callum Wastell.
 
@@ -78,6 +80,7 @@ BEHAVIOUR:
 function buildDayContext(day: DayLog, phase: Phase): string {
   const totals = calculateTotals(day.entries)
   const target = phase === 'lean-bulk' ? '2,650–2,800' : '2,400–2,500'
+  const plan = generateDayPlan(day, phase, new Date().getHours())
 
   const entries = day.entries.length > 0
     ? day.entries
@@ -85,16 +88,60 @@ function buildDayContext(day: DayLog, phase: Phase): string {
         .join('\n')
     : '  (nothing logged yet)'
 
+  const remainingPlan = plan.remainingSlots.length > 0
+    ? plan.remainingSlots
+        .map(s => `  - ${s.name}: ${s.items.map(i => `${i.quantity !== 1 ? i.quantity + 'x ' : ''}${i.food.name}`).join(' + ')} (${Math.round(s.macros.calories)} cal, ${Math.round(s.macros.protein)}P, ${Math.round(s.macros.carbs)}C, ${Math.round(s.macros.fat)}F)`)
+        .join('\n')
+    : '  (all meals already logged)'
+
+  const burnLine = day.caloriesBurned
+    ? `\n- Extra burn from Garmin today: ${day.caloriesBurned} cal → effective target ${plan.effectiveTarget} cal`
+    : ''
+
+  const projectionLine = plan.remainingSlots.length > 0
+    ? `\n- If he eats the remaining plan: projected ${Math.round(plan.finalProjection)} cal (gap vs target: ${plan.gapVsTarget > 0 ? '+' : ''}${Math.round(plan.gapVsTarget)} cal — ${plan.gapVsTarget > 100 ? 'room for a top-up or dessert' : plan.gapVsTarget < -150 ? 'will overshoot' : 'lands on target'})`
+    : ''
+
   return `Today's context (${day.date}):
-- Phase: ${phase === 'lean-bulk' ? 'Lean Bulk' : 'Maintenance'} (target ${target} cal)
+- Phase: ${phase === 'lean-bulk' ? 'Lean Bulk' : 'Maintenance'} (base target ${target} cal)${burnLine}
 - Training: ${day.training || 'not logged'}
 - Activity: ${day.activity.length > 0 ? day.activity.join(', ') : 'none logged'}
 - Weight today: ${day.weight ? day.weight.toFixed(1) + ' kg' : 'not logged'}
 - How he's feeling: ${day.feeling || 'not logged'}
 - Food eaten so far today:
 ${entries}
-- Running totals: ${Math.round(totals.calories)} cal, ${Math.round(totals.protein)}P, ${Math.round(totals.carbs)}C, ${Math.round(totals.fat)}F`
+- Running totals: ${Math.round(totals.calories)} cal, ${Math.round(totals.protein)}P, ${Math.round(totals.carbs)}C, ${Math.round(totals.fat)}F
+- Remaining meals planned by the app:
+${remainingPlan}${projectionLine}`
 }
+
+function buildTrendContext(): string {
+  const weights = getWeights().slice(-14)
+  const days = getAllDays().slice(0, 7).reverse()
+
+  if (weights.length === 0 && days.length === 0) return ''
+
+  const weightLine = weights.length >= 2
+    ? `Weight trend (last ${weights.length} mornings): ${weights.map(w => `${w.date.slice(5)} ${w.weight.toFixed(1)}`).join(', ')}`
+    : ''
+
+  const dayLines = days
+    .filter(d => d.entries.length > 0)
+    .map(d => {
+      const t = calculateTotals(d.entries)
+      const tags: string[] = []
+      if (d.training) tags.push(d.training)
+      if (d.activity.length > 0) tags.push(...d.activity)
+      if (d.feeling) tags.push(d.feeling)
+      const tagStr = tags.length > 0 ? ` [${tags.join(', ')}]` : ''
+      return `  - ${d.date}: ${Math.round(t.calories)} cal, ${Math.round(t.protein)}P/${Math.round(t.carbs)}C/${Math.round(t.fat)}F${d.weight ? `, ${d.weight.toFixed(1)} kg` : ''}${tagStr}`
+    })
+    .join('\n')
+
+  return `\n\nRecent history (for trend context — only reference if relevant):
+${weightLine}${dayLines ? '\nLast ' + days.filter(d => d.entries.length > 0).length + ' days of eating:\n' + dayLines : ''}`
+}
+
 
 export function hasApiKey(apiKey: string): boolean {
   return apiKey.trim().length > 10 && apiKey.startsWith('sk-ant-')
@@ -113,7 +160,7 @@ export async function streamCoachReply(
     dangerouslyAllowBrowser: true,
   })
 
-  const context = buildDayContext(day, phase)
+  const context = buildDayContext(day, phase) + buildTrendContext()
 
   const conversationMessages = history.map(m => ({
     role: m.role === 'coach' ? ('assistant' as const) : ('user' as const),

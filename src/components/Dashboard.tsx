@@ -61,6 +61,22 @@ export default function Dashboard({ day, phase, weights, onUpdate }: Props) {
     onUpdate()
   }
 
+  async function pasteBurn() {
+    try {
+      const text = await navigator.clipboard.readText()
+      const num = parseInt(text.trim(), 10)
+      if (!isNaN(num) && num >= 0 && num < 5000) {
+        setBurnInput(String(num))
+        saveDay({ ...day, caloriesBurned: num })
+        onUpdate()
+      } else {
+        alert(`Clipboard had "${text.slice(0, 40)}" — not a valid calorie number.`)
+      }
+    } catch {
+      alert('Could not read clipboard. iOS may need you to enable Paste in the prompt.')
+    }
+  }
+
   return (
     <div className="page">
       {/* Calories Summary */}
@@ -110,9 +126,25 @@ export default function Dashboard({ day, phase, weights, onUpdate }: Props) {
           />
           <span className="weight-unit">cal</span>
           <button className="save-btn" onClick={saveBurn}>Set</button>
+          <button
+            onClick={pasteBurn}
+            style={{
+              background: 'var(--bg-input)',
+              color: 'var(--accent)',
+              border: '1px solid var(--accent-dim)',
+              borderRadius: 10,
+              padding: '10px 14px',
+              fontSize: 13,
+              fontWeight: 600,
+              cursor: 'pointer',
+              marginLeft: 4,
+            }}
+          >
+            📋 Paste
+          </button>
         </div>
         <div style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 6, lineHeight: 1.4 }}>
-          Add extra burn from motocross, long runs, big walks etc. Bumps today's calorie target.
+          Type it, or have your Garmin Shortcut copy the number to clipboard then tap Paste here.
         </div>
       </div>
 
