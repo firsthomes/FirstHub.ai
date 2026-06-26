@@ -81,4 +81,5 @@ export interface UserSettings {
   phase: Phase
   height: number
   targetWeight: number
+  apiKey: string
 }

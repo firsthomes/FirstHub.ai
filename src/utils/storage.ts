@@ -69,6 +69,7 @@ export function getSettings(): UserSettings {
     phase: 'maintenance',
     height: 178,
     targetWeight: 78,
+    apiKey: '',
   })
 }
 
