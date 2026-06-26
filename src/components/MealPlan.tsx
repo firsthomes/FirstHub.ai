@@ -1,5 +1,5 @@
 import type { DayLog, Phase, FoodEntry } from '../types'
-import { generateDayPlan, type MealSlot } from '../utils/mealPlanner'
+import { generateDayPlan, type MealSlot, type TopUpOption } from '../utils/mealPlanner'
 import { saveDay } from '../utils/storage'
 
 interface Props {
@@ -36,6 +36,22 @@ export default function MealPlan({ day, phase, onUpdate }: Props) {
     onUpdate()
   }
 
+  function logTopUp(t: TopUpOption) {
+    const entry: FoodEntry = {
+      id: crypto.randomUUID(),
+      foodId: `topup-${Date.now()}`,
+      name: t.label,
+      calories: t.food.calories * t.quantity,
+      protein: t.food.protein * t.quantity,
+      carbs: t.food.carbs * t.quantity,
+      fat: t.food.fat * t.quantity,
+      quantity: 1,
+      timestamp: Date.now(),
+    }
+    saveDay({ ...day, entries: [...day.entries, entry] })
+    onUpdate()
+  }
+
   const gapColor =
     plan.gapVsTarget > 200
       ? 'var(--orange)'
@@ -69,23 +85,55 @@ export default function MealPlan({ day, phase, onUpdate }: Props) {
           {' = '}
           <strong style={{ color: gapColor }}>{Math.round(plan.finalProjection)}</strong>
         </div>
-        {plan.gapVsTarget > 100 && (
-          <div style={{ marginTop: 4, color: 'var(--text-muted)' }}>
-            ~{Math.round(plan.gapVsTarget)} cal under — bump portions or add a snack.
-          </div>
-        )}
-        {plan.gapVsTarget < -100 && (
-          <div style={{ marginTop: 4, color: 'var(--text-muted)' }}>
-            ~{Math.round(Math.abs(plan.gapVsTarget))} cal over — trim a portion or skip the dessert.
-          </div>
-        )}
         {Math.abs(plan.gapVsTarget) <= 100 && plan.remainingSlots.length > 0 && (
-          <div style={{ marginTop: 4, color: 'var(--green)' }}>Locked in. Eat the plan and you nail target.</div>
+          <div style={{ marginTop: 4, color: 'var(--green)' }}>Locked in — eat the plan and you nail target.</div>
+        )}
+        {plan.gapVsTarget < -150 && (
+          <div style={{ marginTop: 4, color: 'var(--text-muted)' }}>
+            ~{Math.round(Math.abs(plan.gapVsTarget))} cal over after the plan — fine for one day, keep tomorrow tight.
+          </div>
         )}
       </div>
 
       {plan.remainingSlots.length === 0 && (
         <div className="empty-state">All meals logged. Nice work mate.</div>
+      )}
+
+      {plan.topUps.length > 0 && (
+        <div style={{
+          background: 'var(--bg-input)',
+          borderRadius: 10,
+          padding: '12px 14px',
+          marginBottom: 8,
+          border: '1px dashed var(--accent-dim)',
+        }}>
+          <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 6 }}>
+            💡 Headroom: ~{Math.round(plan.gapVsTarget)} cal
+          </div>
+          <div style={{ fontSize: 11, color: 'var(--text-dim)', marginBottom: 8 }}>
+            After the meals below you've got room for one of these (or have dessert):
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+            {plan.topUps.map((t, i) => (
+              <button
+                key={i}
+                onClick={() => logTopUp(t)}
+                style={{
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border)',
+                  borderRadius: 16,
+                  padding: '6px 12px',
+                  color: 'var(--text)',
+                  fontSize: 12,
+                  fontWeight: 500,
+                  cursor: 'pointer',
+                }}
+              >
+                + {t.label} ({t.cal})
+              </button>
+            ))}
+          </div>
+        </div>
       )}
 
       {plan.remainingSlots.map(slot => (

@@ -138,12 +138,11 @@ function macroSum(items: PlanItem[]): MacroTotals {
   )
 }
 
-function scaleSlotToCalories(items: PlanItem[], targetCal: number): PlanItem[] {
-  const current = macroSum(items).calories
-  if (current === 0 || Math.abs(current - targetCal) < 50) return items
-  const factor = targetCal / current
-  const clamped = Math.max(0.6, Math.min(1.5, factor))
-  return items.map(i => ({ food: i.food, quantity: Math.round(i.quantity * clamped * 10) / 10 }))
+export interface TopUpOption {
+  label: string
+  cal: number
+  food: FoodItem
+  quantity: number
 }
 
 export interface DayPlan {
@@ -155,6 +154,31 @@ export interface DayPlan {
   plannedCalories: number
   finalProjection: number
   gapVsTarget: number
+  topUps: TopUpOption[]
+}
+
+function buildTopUps(gap: number): TopUpOption[] {
+  if (gap < 100) return []
+  const options: TopUpOption[] = []
+  const honey = lookupFood('honey-tbsp')
+  const avo = lookupFood('avocado-quarter')
+  const banana = lookupFood('banana')
+  const bagel = lookupFood('bagel')
+  const clusters = lookupFood('protein-clusters-70g')
+
+  if (gap < 200) {
+    if (honey) options.push({ label: '1 tbsp honey', cal: 65, food: honey, quantity: 1 })
+    if (avo) options.push({ label: '1/4 avocado', cal: 80, food: avo, quantity: 1 })
+    if (banana) options.push({ label: '1 banana', cal: 105, food: banana, quantity: 1 })
+  } else if (gap < 400) {
+    if (avo) options.push({ label: '1/2 avocado + honey', cal: 225, food: avo, quantity: 2 })
+    if (banana) options.push({ label: '2 bananas + honey', cal: 275, food: banana, quantity: 2 })
+    if (bagel) options.push({ label: 'Bagel + honey', cal: 315, food: bagel, quantity: 1 })
+  } else {
+    if (bagel) options.push({ label: 'Bagel + banana + honey', cal: 420, food: bagel, quantity: 1 })
+    if (clusters) options.push({ label: 'Bowl of clusters', cal: 360, food: clusters, quantity: 1.15 })
+  }
+  return options
 }
 
 export function generateDayPlan(day: DayLog, phase: Phase, currentHour: number): DayPlan {
@@ -167,41 +191,31 @@ export function generateDayPlan(day: DayLog, phase: Phase, currentHour: number):
   const isTrainingDay = day.training === 'upper' || day.training === 'lower'
   const templates = isTrainingDay ? TEMPLATES_TRAINING : TEMPLATES_REST
 
-  const candidateSlots = templates.filter(t => !isSlotComplete(t, day) && currentHour <= t.endHour + 1)
-
-  let candidateTotal = 0
-  const baseSlots: { template: SlotTemplate; items: PlanItem[]; baseCal: number }[] = []
-  for (const t of candidateSlots) {
+  const remainingSlots: MealSlot[] = []
+  for (const t of templates) {
+    if (isSlotComplete(t, day)) continue
+    if (currentHour > t.endHour + 1) continue
     const items: PlanItem[] = []
     for (const f of t.defaultFoods) {
       const food = lookupFood(f.foodId)
       if (food) items.push({ food, quantity: f.quantity })
     }
     if (items.length === 0) continue
-    const baseCal = macroSum(items).calories
-    candidateTotal += baseCal
-    baseSlots.push({ template: t, items, baseCal })
+    remainingSlots.push({
+      id: t.id,
+      name: t.name,
+      emoji: t.emoji,
+      startHour: t.startHour,
+      endHour: t.endHour,
+      items,
+      macros: macroSum(items),
+    })
   }
-
-  const remainingBudget = Math.max(0, effectiveTarget - consumed.calories)
-  const globalFactor = candidateTotal > 0 ? Math.max(0.6, Math.min(1.4, remainingBudget / candidateTotal)) : 1
-
-  const remainingSlots: MealSlot[] = baseSlots.map(({ template, items, baseCal }) => {
-    const scaledItems = scaleSlotToCalories(items, baseCal * globalFactor)
-    return {
-      id: template.id,
-      name: template.name,
-      emoji: template.emoji,
-      startHour: template.startHour,
-      endHour: template.endHour,
-      items: scaledItems,
-      macros: macroSum(scaledItems),
-    }
-  })
 
   const plannedCalories = remainingSlots.reduce((s, slot) => s + slot.macros.calories, 0)
   const finalProjection = consumed.calories + plannedCalories
   const gapVsTarget = effectiveTarget - finalProjection
+  const topUps = gapVsTarget > 100 ? buildTopUps(gapVsTarget) : []
 
   return {
     effectiveTarget,
@@ -212,5 +226,6 @@ export function generateDayPlan(day: DayLog, phase: Phase, currentHour: number):
     plannedCalories,
     finalProjection,
     gapVsTarget,
+    topUps,
   }
 }
